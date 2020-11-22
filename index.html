@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Rental mobil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet">
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="top-header navbar navbar-fixed-top">
+	<div class="container">
+		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
+			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
+				
+		</ul>
+		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 				
+			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Daftar</a></li> 
+			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Masuk</a></li>
+
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+				<section>
+					<div class="modal-body modal-spa">
+						<div class="login-grids">
+							<div class="login">
+								<div class="login-right">
+									<form action="#" method="post" onsubmit="return validasi_input(this)">
+										<h3>Buat akun Anda</h3>
+										<input type="text" name="nama" placeholder="Masukan Nama lengkap anda">
+										<input type="text" name="username" placeholder="Masukan Username anda">
+										<input type="text" name="alamat" placeholder="Masukan Alamat anda">
+										<input type="text" name="telepon" placeholder="Masukan Telepon anda">
+										<input type="password" name="password" placeholder="Masukan Password anda">	
+										<input type="text" name="noktp" placeholder="Masukan No KTP anda">	
+										<input type="submit" name="daftar" value="CREATE ACCOUNT">
+									</form>
+								</div>
+									<div class="clearfix"></div>								
+							</div>
+							</div>
+					</div>
+				</section>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content modal-info">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+			</div>
+			<div class="modal-body modal-spa">
+				<div class="login-grids">
+					<div class="login">
+						<div class="login-right">
+							<form action="prosesdaftar.php" method="post" onsubmit="return validasi_input(this)">
+								<h3>Masuk Dengan Akun Anda</h3>
+								<input type="text" name="username" placeholder="Masukan Username anda">
+								<input type="password" name="password" placeholder="Masukan password anda">
+								<input type="submit" value="SIGNIN" name="masuk">
+							</form>
+						</div>
+						<div class="clearfix"></div>								
+					</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="container">
+		<div class="logo wow fadeInDown animated">
+			<a href="index.html">Rental <span>Mobil</span></a>	
+		</div>
+		<div class="bus wow fadeInUp animated">
+            <a href="#" class="buses active">Daftar Mobil</a>
+        </div>
+		<div class="lock fadeInDown animated"> 
+			<li><i class="fa fa-lock"></i></li>
+            <li><div class="securetxt">Aman &amp; Terpecaya<br></div></li>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
+	<div class="container">
+	<div class="navigation">
+			<nav class="navbar navbar-default">
+			
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="cl-effect-1">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Tentang</a></li>
+								<li><a href="#">Privasi</a></li>
+								<li><a href="#">Syarat dan ketentuan </a>  </li>
+								<div class="clearfix"></div>
+						</ul>
+					</nav>
+				</div>
+					
+			</nav>
+		</div>
+		
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="col-md-5 bann-info1 wow fadeInLeft animated" data-wow-delay=".5s">
+		<i class="fa fa-columns"></i>
+		<h3>Rental Mobil </h3>
+	</div>
+	<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s">
+		<h2 style="background: #EAEAEA; text-align: center; padding: 5px;">Rental Mobil Online dengan Harga terjangkau</h2>
+		<div class="ban-top">
+			<div class="bnr-left">
+			<form method="POST" action="cari.php" onsubmit="return validasi_input(this)">
+				<label class="inputLabel">Mobil</label>
+				<select name="nama">
+					<option value="pilih">Pilih</option>
+				</select>
+			</div>
+
+	<div class="clearfix"></div>
+		</div>
+		<div class="ban-bottom">
+				<div class="bnr-left">
+				<label class="inputLabel">Asal</label>
+				<select name="asal">
+				<option value="">Pilih</option>
+				</select>
+				</div>
+
+				<div class="bnr-left">
+				<label class="inputLabel">Tujuan</label>
+				<select name="tujuan">
+				<option value="">Plih</option>
+				</select>
+				</div>
+				<div class="clearfix"></div>
+				<div class="sear">
+				<button class="seabtn">Cari Mobil</button>
+				</div>
+				</form>
+
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div class="footer-top">
+	<div class="container">
+		<div class="col-md-6 footer-left wow fadeInLeft animated" data-wow-delay=".5s">
+			<h3>Kategori Mobil</h3>
+		</div>
+		<div class="col-md-6 footer-left wow fadeInRight animated" data-wow-delay=".5s">
+			<h3>Perjalanan</h3>
+	</div>
+</div>
+
+<div class="copy-right">
+	<div class="container">
+	
+		<div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+			<ul>
+				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+			</ul>
+		</div>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2020 Rental Mobil  <a href="" target=""></a> </p>
+	</div>
+</div>
+</body>
+</html>
